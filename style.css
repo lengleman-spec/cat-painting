@@ -29,7 +29,8 @@ body {
   left: -31px;
   border-top-left-radius: 90px;
   border-top-right-radius: 10px;
-  transform: rotate(-45deg); /* rotates triangle to look like ear */
+  transform: rotate(-45deg); /*Rotates triangle to look like ear */
+  z-index: 1; /*used to align overlapping elements */
 }
 
 .cat-right-ear {
@@ -42,4 +43,11 @@ body {
   transform: rotate(45deg);
   border-top-left-radius: 90px;
   border-top-right-radius: 10px;
+  z-index: 1;
+}
+
+.cat-left-inner-ear {
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 40px solid #3b3b4f;
 }
